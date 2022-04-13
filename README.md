@@ -1,7 +1,7 @@
 # WWW Simulator
 
 ## Contents
-- [Build new release](Build-new-release)
+- [Build new release](#Build-new-release)
 
 ### Build new release
 
