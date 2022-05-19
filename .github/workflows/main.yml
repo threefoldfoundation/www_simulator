@@ -30,7 +30,7 @@ jobs:
         git clone https://github.com/threefoldtech/grid_weblets.git
         cd grid_weblets
         yarn install
-        cd easy-docs && yarn install
+        cd playground && yarn install
         pwd
         cd ..
         yarn build:app
@@ -44,6 +44,6 @@ jobs:
         key: ${{ secrets.PROD_SSH_KEY }}
         passphrase: ${{ secrets.PROD_SSH_KEY_PASSPHRASE }}
         rm: false
-        source: "grid_weblets/docs/build/elements/farmingcalculator.wc.js"
+        source: "grid_weblets/dist/build/elements/farmingcalculator.wc.js"
         target: "${{ secrets.PROD_OVH_DIR }}"
         strip_components: 4
