@@ -44,7 +44,7 @@ jobs:
         key: ${{ secrets.PROD_SSH_KEY }}
         passphrase: ${{ secrets.PROD_SSH_KEY_PASSPHRASE }}
         rm: false
-        port: 34022
+        port: ${{ secrets.PORT }}
         source: "grid_weblets/dist/build/elements/farmingcalculator.wc.js"
         target: "${{ secrets.PROD_DIR }}"
         strip_components: 4
