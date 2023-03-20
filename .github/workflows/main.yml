@@ -21,3 +21,4 @@ jobs:
           git restore .
           git pull
           cp farmingcalculator.wc.js src/
+
